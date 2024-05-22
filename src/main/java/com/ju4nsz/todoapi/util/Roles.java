@@ -9,8 +9,8 @@ import java.util.List;
 @Getter
 public enum Roles {
 
-    USER(Arrays.asList(Permissions.CREATE_TASK, Permissions.DELETE_TASK, Permissions.MODIFY_TASK)),
-    ADMINISTRATOR(Arrays.asList(Permissions.CREATE_TASK, Permissions.DELETE_TASK, Permissions.MODIFY_TASK, Permissions.READ_ALL_TASKS));
+    USER(Arrays.asList(Permissions.CREATE_TASK, Permissions.DELETE_TASK, Permissions.MODIFY_TASK, Permissions.READ_TASK, Permissions.READ_USER)),
+    ADMINISTRATOR(Arrays.asList(Permissions.CREATE_TASK, Permissions.DELETE_TASK, Permissions.MODIFY_TASK, Permissions.READ_ALL_TASKS, Permissions.READ_ALL_USERS, Permissions.READ_TASK, Permissions.READ_USER, Permissions.DELETE_USER));
 
     private List<Permissions> permissions;
 
